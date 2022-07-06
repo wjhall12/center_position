@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+/* 1. To center things on the screen, choose text-align: center; */
+  text-align: center;
+}
+
+h1 {
+/* 2. As long as the h1 is a full width block element, then aling items: center works. But if you adjust the h1 tag and maybe add a width of 10% then the elemeent is no longer a full width block element and therefore align items: center no longer works for the h1. Even though the body says text align center. */
+  width: 10%;
+  margin-top: 0;
+/* 3. Another way of centering is by using the margin. If you say margin: auto that will center align your element. In this case we want the top and bottom to be auto and left and right to be auto. So we are going to remove the margin-top: 0, because we will change it in this new margin. */
+margin: 0 auto;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+}
+
+.middle-container {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+
+.bottom-container {
+  background-color: purple;
+  width: 200px;
+  height: 200px;
+}
